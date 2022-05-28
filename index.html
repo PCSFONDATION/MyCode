@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">// JavaScript code
+function search_animal() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('animals');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}</script>
+	<style type="text/css">#searchbar{
+     margin-left: 15%;
+     padding:15px;
+     border-radius: 10px;
+   }
+ 
+   input[type=text] {
+      width: 30%;
+      -webkit-transition: width 0.15s ease-in-out;
+      transition: width 0.15s ease-in-out;
+   }
+ 
+   /* When the input field gets focus,
+        change its width to 100% */
+   input[type=text]:focus {
+     width: 70%;
+   }
+ 
+  #list{
+    font-size:  1.5em;
+    margin-left: 90px;
+   }
+ 
+.animals{
+   display: list-item;    
+  }
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #C9D1D9;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+h1{
+	color: #0366FF;
+}
+p{
+	color: black;
+}
+html {
+  background-color: #222323;
+}</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>clasgam.mandelieu</title>
+</head>
+<body>
+<h1>MyCode</h1>
+<p>Salut ! Si tu souaites apprendre a codé ? tu es tombé sur le bon site ! trouve tout les languages de code juste en dessous, que tu souaites etudier et n'ésite pas aussi a aller voir notre discord : <a href="https://discord.gg/dPW8uB6MVk">discord (;</a></p>
+<input id="searchbar" onkeyup="search_animal()" type="text"
+        name="search" placeholder="Quelle language de code veux... tu apprendre ?">
+      
+    <!-- ordered list -->
+    <h2>Listes des languages</h2>
+    <ol id='list'>
+        <a href="page object wars.html"><li class="animals">Le language python</li></a>
+        <a href=""><li class="animals">Des pages web ? le html ? et plus !</li></a>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+        <li class="animals"></li>
+    </ol>
+      
+    <!-- linking javascript -->
+    <script src="./animals.js"></script>
+    <a href="a propos de nous.html"><p>(っ◔◡◔)っ ♥ a propos de nous ♥</p></a>
+</body>
+</html>
