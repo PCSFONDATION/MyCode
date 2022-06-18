@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The World of internet</title>
+	<style type="text/css" href="style.css">
+		
+		body {
+			margin: 0;
+			background-color: #AA5252;
+
+		}
+
+
+		.container {
+			width: 100vw;
+			height: 100vh;
+
+
+			font-family: 'Quicksand', sans-serif;
+			font-weight: bold;
+			font-size: 2px;
+
+			display: grid;
+
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 50px 1fr 1fr 100px;
+			
+
+			gap: 10px;
+
+
+
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		.container div{
+			padding: 10px;
+			border: 1px solid;
+		}
+		.header {
+			font-size: 14px;
+			grid-column-start: 1;
+			grid-column-end: 4;
+			text-align: right;
+			background-color: blanchedalmond;
+
+		}
+		.content-large{
+			grid-row-start: 2;
+			grid-row-end: span 2;
+			font-size: 14px;
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		.index{
+			grid-row-start: 2;
+			grid-row-end: 4;
+			font-size: 14px;
+			grid-column-start: 3;
+			grid-column-end: 4;
+		}
+		.footer{
+			grid-column: 1/ span 3;
+			font-size: 14px;
+			background-color: #551717;
+		}
+		iframe{
+			width: 350px;
+			height: 100px;
+		}
+		.header p{
+			text-align: center;
+			padding-bottom: 30px;
+		}
+		.header button{
+			text-align: right;
+			margin-bottom: 50px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header"><p>MYCODE</p>
+		</div>
+		<div class="content-large"> <h1>Bienvenue sur Mon site web</h1><p>, avec mes connaissance en python j'ai crée un "concept" de système d'exploitation... python est un language simple mais peut puissant voila pourquoi cela n'est pas trés concré, mais si tu aimes le concept n'esite pas a me contacter à clasgamepro@gmail.com.
+		Dans "pyOS" vous pourrez crée des fichiers, généré des mots de passe, rechercher "youtube" (La fonction recherche est encore en beta c'est pourquoi je recomande de na pas l'utiliser.</p>
+		<a href="pyOS.rar"><button>pyOS 1.1 téléchargement</button></a>
+		<br>
+		<h3>PYTHON 3.10 est nécessaire</h3>
+		<iframe src="http://fabacademy.org/2021/labs/lamachinerie/students/jules-topart/images/2_git/python-install.gif"></iframe>
+		</div>
+		<div class="index">
+			<h3>In the world of internet</h3>
+		<ul>
+			<li>
+				<a href="">pyOS</a>
+			</li>
+			<br>
+			<li>
+				<a href="backrooms.html">Les backrooms ?</a><p>
+			</li>
+			<br>
+			<li>
+				<a href="backroomcentral.html">The central backrooms</a>
+			</li>
+		</ul>
+			
+		</div>
+		<div class="footer"> <p>copyright 2022-2023 by Anis El idrissi pyOS concept. this is a concept and it answers no use, creating an operating system in PYTHON is an idea... here you would neither download a real operating system nor a real application</p> </div>
+	</div>
+</body>
+</html>
